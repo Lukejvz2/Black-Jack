@@ -14,12 +14,12 @@ public class Card {
 	public String toString(){
 		String result = "";
 		switch(rank){
-		case 1: result += "A of "; break;
-		case 11: result += "J of "; break;
-		case 12: result += "Q of "; break;
-		case 13: result += "K of "; break;
+		case 1: result += "A"; break;
+		case 11: result += "J"; break;
+		case 12: result += "Q"; break;
+		case 13: result += "K"; break;
 		default:
-			result = result + rank + " of ";
+			result = result + rank + "";
 		}
 		switch(suit){
 		case "c": return result += "c"; 
