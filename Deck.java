@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Stack;
 
+/**
+ * A Deck class simulating a standard 52-card deck
+ **/
 public class Deck {
 	
 	private ArrayList<Card> discard;
