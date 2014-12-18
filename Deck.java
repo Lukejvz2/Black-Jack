@@ -50,6 +50,7 @@ public class Deck {
 		}
 		else{
 			Card card = deck.get(0);
+			System.out.println("You drew: " + card.toString());
 			discard.add(deck.get(0));
 			deck.remove(0);
 			return card;
