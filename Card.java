@@ -1,5 +1,11 @@
 package blackjack;
-
+/**
+ * 
+ * @author Davor Civsa, Luke Vande Zande
+ *
+ *	Card class simulating a standard playing card, between a value of 
+ *	1-13, whose suit is c(clubs), d(diamonds), h(hearts), or s(spades).
+ */
 public class Card {
 	
 	private final String[] suits = {"c", "d", "h", "s"};
