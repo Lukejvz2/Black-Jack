@@ -5,6 +5,9 @@ import java.util.Random;
 import java.util.Stack;
 
 /**
+ * 
+ *  @author Davor Civsa, Luke Vande Zande
+ * 
  * A Deck class simulating a standard 52-card deck
  **/
 public class Deck {
