@@ -12,6 +12,7 @@ public class Deck {
 	
 	public Deck(){
 		discard = new ArrayList<Card>();
+		//creates and adds 52 new cards to discard
 		for(int i = 0; i < 4; i++){
 			for(int j = 0; j < 13; j++){
 				Card newCard = new Card(i, j+1);
@@ -24,12 +25,14 @@ public class Deck {
 	}
 	
 	public void shuffle(){
+		//if there are cards in the deck, shift them to discard
 		if(deck.size() > 0){
 			for(int i = 0; i < deck.size();){
 				discard.add(deck.get(0));
 				deck.remove(0);
 			}
 		}
+		//picks a random card to add to the deck
 		while(discard.size() > 0){
 			int r = rand.nextInt(discard.size());
 			deck.add(discard.get(r));
