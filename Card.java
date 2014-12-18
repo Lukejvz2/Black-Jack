@@ -2,7 +2,7 @@ package blackjack;
 
 public class Card {
 	
-	private final String[] suits = {"c", "d", "h", "s"};
+	private final String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
 	private final String suit;
 	private final int rank;
 	
@@ -14,18 +14,18 @@ public class Card {
 	public String toString(){
 		String result = "";
 		switch(rank){
-		case 1: result += "A of "; break;
-		case 11: result += "J of "; break;
-		case 12: result += "Q of "; break;
-		case 13: result += "K of "; break;
+		case 1: result += "A of ";
+		case 11: result += "J of ";
+		case 12: result += "Q of ";
+		case 13: result += "K of ";
 		default:
 			result = result + rank + " of ";
 		}
 		switch(suit){
-		case "c": return result += "c"; 
-		case "d": return result += "d"; 
-		case "h": return result += "h"; 
-		case "s": return result += "s";
+		case "Clubs": return result += "c";
+		case "Diamonds": return result += "d";
+		case "Hearts": return result += "h";
+		case "Spades": return result += "s";
 		default:
 			return null;
 		}
